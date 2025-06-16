@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    font-family:Edu SA Hand,Arial, Helvetica, sans-serif; 
+}
+body{
+    font-family: Edu SA Hand,Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    background:#fff;
+    padding: 16px 32px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    border-radius:0 0 12px 12px;
+    margin-bottom: 24px;
+    gap:250px
+}
+header .logo{
+    height: 150px;
+    width:auto;
+    margin-right: 0;
+}
+header nav a {
+    text-decoration: none;
+    color:black;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+    padding: 32px 32px;
+    border-radius:6px;
+    text-align: center;
+}
+header nav a:hover{
+    background: #f1b23c;
+    color:rgb(145, 53, 53);
+}
+
+/* About Us Page Styles */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+h1, h2 {
+    color: #c44b00;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.team-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+}
+
+.team-list li {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.team-list li:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(180,138,60,0.15);
+}
+
+.team-list img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(77, 54, 12, 0.08);
+    background: #f1b23c;
+}
+
+.team-list h3 {
+    font-size: 1.2rem;
+    color: #c44b00;
+    font-weight: 600;
+    margin: 0.5rem 0 0.5rem 0;
+    text-align: center;
+}
+
+.team-list span {
+    color: #140606;
+    font-weight: 400;
+}
+
+.team-list p {
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding:1rem;
+    font-size: 2rem;
+    color: #140606;
+    margin-top: 2rem;
+    background-color: #e4d0c0;
+    margin:3rem 0 0 0;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .team-list {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    header, main {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    .team-list {
+        grid-template-columns: 1fr;
+    }
+}
